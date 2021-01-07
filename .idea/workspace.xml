@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/models/model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
+    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="MVC model">
+      <change afterPath="$PROJECT_DIR$/view/loginView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/src/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/mainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/mainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/mainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,7 +85,7 @@
       <workItem from="1609766647415" duration="602000" />
       <workItem from="1609882019565" duration="2004000" />
       <workItem from="1609936511376" duration="9229000" />
-      <workItem from="1610008819399" duration="412000" />
+      <workItem from="1610008819399" duration="8377000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -85,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609334416146</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MVC model">
+      <created>1610009250975</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610009250975</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="MVC model" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC model" />
   </component>
 </project>

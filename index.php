@@ -1,13 +1,14 @@
 <?php
 
-require("./controllers/mainController.php");
+require("controllers/mainController.php");
 
-if($_GET["action"] == "loggin"){
-
-} elseif ($_GET["action"] == "search"){
-
-}
-// by default
-else {
+if(isset($_GET['action'])) {
+    echo $_GET['action'];
+    if ($_GET['action'] == 'login') {
+        loginView();
+    } elseif ($_GET['action'] == 'search') {
+        searchView();
+    }
+}else {
     mainView();
 }

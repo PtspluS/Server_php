@@ -13,6 +13,7 @@
     <!--Online stylesheet-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style/style.css">
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -23,9 +24,8 @@
     <button class="w3-bar-item w3-button w3-large"
             onclick="w3_close()">Close &times;</button>
     <a href="index.php" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp;</a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>
+    <a href="index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+    <a href="index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>
 </div>
 
 <div>
