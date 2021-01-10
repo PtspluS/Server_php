@@ -13,7 +13,7 @@
             <label class="w3-text-teal"><b>Password</b></label>
             <input class="w3-input w3-animate-input" type="password" style="width:30%">
         </form>
-        <div class="w3-center"><a href="./index.php?action=register">No account ? Register here in 5 minutes !</a></div>
+        <div class="w3-center">No account ? <a href="./index.php?action=signup">Register here in 5 minutes !</a></div>
     </div>
 </div>
 

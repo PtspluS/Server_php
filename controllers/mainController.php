@@ -1,6 +1,6 @@
 <?php
 
-require("/models/model.php");
+//require("/models/model.php");
 
 function mainView(){
     require("/view/indexView.php");
@@ -12,4 +12,12 @@ function loginView(){
 
 function searchView(){
     require("/view/searchView.php");
+}
+
+function signupView(){
+    require("/view/signupView.php");
+}
+
+function resetMDPView(){
+    require("/view/resetMDPView.php");
 }
