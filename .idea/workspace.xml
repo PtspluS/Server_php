@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="MVC model">
-      <change afterPath="$PROJECT_DIR$/view/loginView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/style/style.css" afterDir="false" />
+    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="adding log">
+      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/config_sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/mainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/mainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/loginView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,8 @@
       <workItem from="1609766647415" duration="602000" />
       <workItem from="1609882019565" duration="2004000" />
       <workItem from="1609936511376" duration="9229000" />
-      <workItem from="1610008819399" duration="8377000" />
+      <workItem from="1610008819399" duration="11252000" />
+      <workItem from="1610293903867" duration="1337000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -101,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610009250975</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new personal css">
+      <created>1610035176529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610035176529</updated>
+    </task>
+    <task id="LOCAL-00004" summary="adding log">
+      <created>1610035194082</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610035194082</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="MVC model" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC model" />
+    <MESSAGE value="new personal css" />
+    <MESSAGE value="adding log" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding log" />
   </component>
 </project>

@@ -8,12 +8,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= $title ?></title>
-    <meta name="description" content="">
+    <meta name="description" content=<?= $description ?>>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Online stylesheet-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="/view/src/style/style.css">
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -23,9 +23,9 @@
 <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="sidebar">
     <button class="w3-bar-item w3-button w3-large"
             onclick="w3_close()">Close &times;</button>
-    <a href="index.php" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
-    <a href="index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
-    <a href="index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>
+    <a href="/Server_php/index.php" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+    <a href="/Server_php/index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+    <a href="/Server_php/index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>
 </div>
 
 <div>

@@ -1,5 +1,5 @@
-<?php $title = "Nom de l'entreprise"; ?>
-
+<?php $title = "Company'ni"; ?>
+<?php $description = "Welcome to company'ni, the main company in Wakanda in video."; ?>
 <?php ob_start(); ?>
 <!-- Content -->
 
@@ -7,4 +7,4 @@
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require("view/template.php"); ?>
+<?php require("/view/template.php"); ?>
