@@ -8,7 +8,9 @@
  *                                                 \________> views/... -------> template.php
  *
  *  */
-require("/controllers/mainController.php");
+require("controllers/mainController.php");
+
+echo phpinfo();
 
 if(isset($_GET['action'])) {
     if ($_GET['action'] == 'login') {

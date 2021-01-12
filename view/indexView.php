@@ -1,5 +1,5 @@
-<?php $title = "Company'ni"; ?>
-<?php $description = "Welcome to company'ni, the main company in Wakanda in video."; ?>
+<?php $title = ""; ?>
+
 <?php ob_start(); ?>
 <!-- Content -->
 

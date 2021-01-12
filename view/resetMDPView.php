@@ -1,5 +1,5 @@
 <?php $title = "Reset password" ?>
-<?php $description = ""?>
+
 <?php  ob_start();
 // Initialize the session
 session_start();
@@ -75,7 +75,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <div class="wrapper">
     <h2>Reset Password</h2>
     <p>Please fill out this form to reset your password.</p>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="<?php echo $_SERVER["PHP_SELF"]."?action=reset"; ?>" method="post">
         <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
             <label>New Password</label>
             <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
