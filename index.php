@@ -8,15 +8,14 @@
  *                                                 \________> views/... -------> template.php
  *
  *  */
-require("controllers/mainController.php");
+require("\controllers\mainController.php");
 
-echo phpinfo();
 
 if(isset($_GET['action'])) {
     if ($_GET['action'] == 'login') {
         loginView();
     } elseif ($_GET['action'] == 'search') {
-        searchView();
+        //searchView();
     } elseif ($_GET['action'] == 'signup') {
         signupView();
     } elseif ($_GET['action'] == 'reset') {
