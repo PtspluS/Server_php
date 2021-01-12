@@ -3,6 +3,8 @@
 
 <?php  ob_start();
 
+require_once "/models/model.php";
+
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -17,19 +19,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare a select statement
         $sql = "SELECT id FROM users WHERE username = ?";
 
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = $mysqli->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            $stmt->bind_param("s", $param_username);
 
             // Set parameters
             $param_username = trim($_POST["username"]);
 
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                /* store result */
-                mysqli_stmt_store_result($stmt);
+            if($stmt->execute()){
+                // store result
+                $stmt->store_result();
 
-                if(mysqli_stmt_num_rows($stmt) == 1){
+                if($stmt->num_rows == 1){
                     $username_err = "This username is already taken.";
                 } else{
                     $username = trim($_POST["username"]);
@@ -39,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
 
             // Close statement
-            mysqli_stmt_close($stmt);
+            $stmt->close();
         }
     }
 
@@ -68,29 +70,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare an insert statement
         $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
 
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = $mysqli->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+            $stmt->bind_param("ss", $param_username, $param_password);
 
             // Set parameters
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
 
+            //echo $stmt->execute();
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
+            if($stmt->execute()){
                 // Redirect to login page
-                header("location: login.php");
+                header("location: index.php?action=login");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
 
             // Close statement
-            mysqli_stmt_close($stmt);
+            $stmt->close();
         }
     }
 
     // Close connection
-    mysqli_close($link);
+    $mysqli->close();
 }
 ?>
 

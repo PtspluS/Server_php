@@ -2,13 +2,15 @@
 
 
 <?php  ob_start();
+// Include config file
+require_once "/models/model.php";
 
 // Initialize the session
 session_start();
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: index.php");
+    header("location: welcome.php");
     exit;
 }
 
@@ -24,7 +26,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $username_err = "Please enter username.";
     } else{
         $username = trim($_POST["username"]);
-        $_SESSION["username"] = $username;
     }
 
     // Check if password is empty
@@ -39,23 +40,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare a select statement
         $sql = "SELECT id, username, password FROM users WHERE username = ?";
 
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = $mysqli->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            $stmt->bind_param("s", $param_username);
 
             // Set parameters
             $param_username = $username;
 
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
+            if($stmt->execute()){
                 // Store result
-                mysqli_stmt_store_result($stmt);
+                $stmt->store_result();
 
                 // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){
+                if($stmt->num_rows == 1){
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-                    if(mysqli_stmt_fetch($stmt)){
+                    $stmt->bind_result($id, $username, $hashed_password);
+                    if($stmt->fetch()){
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
                             session_start();
@@ -81,14 +82,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
 
             // Close statement
-            mysqli_stmt_close($stmt);
+            $stmt->close();
         }
     }
 
     // Close connection
-    mysqli_close($link);
+    $mysqli->close();
 }
 ?>
+
 <div class="w3-container">
     <div class="wrapper">
         <h2>Login</h2>
