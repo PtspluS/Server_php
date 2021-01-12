@@ -26,7 +26,15 @@
             onclick="w3_close()">Close &times;</button>
     <a href="/Server_php/index.php" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
     <a href="/Server_php/index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
-    <a href="/Server_php/index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>
+    <?php
+    if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+        $contentIco = '<a href="logout.php" class="w3-bar-item w3-button"><i class="fas fa-user-circle" aria-hidden="true"></i>&nbsp; Hello '.$_SESSION[username].'. Logout</a>';
+    } else {
+        $contentIco = '<a href="/Server_php/index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>';
+    }
+    echo $contentIco;
+    ?>
+
 </div>
 
 <div>

@@ -3,6 +3,7 @@
 
 <?php  ob_start();
 
+
 // Initialize the session
 session_start();
 
@@ -24,6 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $username_err = "Please enter username.";
     } else{
         $username = trim($_POST["username"]);
+        $_SESSION["username"] = $username;
     }
 
     // Check if password is empty
