@@ -3,7 +3,6 @@
 
 <?php  ob_start();
 
-
 // Initialize the session
 session_start();
 
@@ -109,6 +108,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
             <p>Don't have an account? <a href="index.php?action=signup">Sign up now</a>.</p>
+            <p>Forget password ? You can reset it <a href="index.php?action=reset">here</a>.</p>
         </form>
     </div>
 </div>

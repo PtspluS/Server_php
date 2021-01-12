@@ -43,7 +43,7 @@
         <?= $content ?>
     </div>
 </div>
-
+<button style="position:absolute;bottom 0; right:0; width:10px; height:10px; font-size:5px; border: 1px outset blue;" onclick="document.body.classList.add('w3-spin')"><i class="fas fa-sync"></i></button>
 <script>
     function w3_open() {
         document.getElementById("sidebar").style.display = "block";
