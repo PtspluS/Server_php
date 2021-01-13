@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="can logout">
-      <change afterPath="$PROJECT_DIR$/view/searchView.php" afterDir="false" />
+    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="add searchView.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/loginView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/resetMDPView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/resetMDPView.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <workItem from="1610008819399" duration="11252000" />
       <workItem from="1610293903867" duration="3231000" />
       <workItem from="1610485679598" duration="6246000" />
-      <workItem from="1610543899489" duration="4473000" />
+      <workItem from="1610543899489" duration="4691000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -177,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610550352696</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add searchView.php">
+      <created>1610551533885</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610551533885</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +212,8 @@
     <MESSAGE value="object oriented" />
     <MESSAGE value="can add user and login" />
     <MESSAGE value="can logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="can logout" />
+    <MESSAGE value="add searchView.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="add searchView.php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
