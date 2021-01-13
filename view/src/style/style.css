@@ -5,3 +5,11 @@ html, body {
     height: auto;
     width: 100%;
 }
+
+.mySlides {
+    display: none;
+}
+
+.w3-sofia {
+    font-family: Sofia, cursive;
+}

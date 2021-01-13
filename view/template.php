@@ -1,4 +1,9 @@
-<?php  session_start();?>
+<?php
+try {
+    session_start();
+} finally {
+
+} ?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -15,8 +20,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <!--Custom css-->
-    <link rel="stylesheet" href="/view/src/style/style.css">
+    <link rel="stylesheet" href="view/src/style/style.css">
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -30,7 +36,7 @@
     <a href="/Server_php/index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
     <?php
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-        $contentIco = '<a href="../logout.php" class="w3-bar-item w3-button"><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i>&nbsp; Hello ' .$_SESSION[username].'. Logout</a>';
+        $contentIco = '<button onclick="open_close_usermenu(\'submenu\')" class="w3-btn w3-block w3-left-align"><i class="fas fa-user-circle"></i>&nbsp; '.$_SESSION["username"]. '</button><div id="submenu" class="w3-container w3-hide"><a href="logout.php" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>&nbsp; Logout</a></div>';
     } else {
         $contentIco = '<a href="/Server_php/index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>';
     }
@@ -53,6 +59,14 @@
     }
     function w3_close() {
         document.getElementById("sidebar").style.display = "none";
+    }
+    function open_close_usermenu(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
     }
 </script>
 </body>
