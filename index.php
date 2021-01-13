@@ -11,7 +11,7 @@
 require("\controllers\mainController.php");
 
 
-if(isset($_GET['action'])) {
+if (isset($_GET['action'])) {
     if ($_GET['action'] == 'login') {
         loginView();
     } elseif ($_GET['action'] == 'search') {
@@ -21,6 +21,6 @@ if(isset($_GET['action'])) {
     } elseif ($_GET['action'] == 'reset') {
         resetMDPView();
     }
-}else {
+} else {
     mainView();
 }

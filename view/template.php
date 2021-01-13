@@ -1,3 +1,5 @@
+<?php  session_start();?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -28,11 +30,10 @@
     <a href="/Server_php/index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
     <?php
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-        $contentIco = '<a href="logout.php" class="w3-bar-item w3-button"><i class="fas fa-user-circle" aria-hidden="true"></i>&nbsp; Hello '.$_SESSION[username].'. Logout</a>';
+        $contentIco = '<a href="../logout.php" class="w3-bar-item w3-button"><i class="fas fa-user-circle" aria-hidden="true"></i>&nbsp; Hello ' .$_SESSION[username].'. Logout</a>';
     } else {
         $contentIco = '<a href="/Server_php/index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>';
     }
-    echo $contentIco;
     ?>
 
 </div>
