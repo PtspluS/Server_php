@@ -10,7 +10,6 @@
  *  */
 require("\controllers\mainController.php");
 
-
 if (isset($_GET['action'])) {
     if ($_GET['action'] == 'login') {
         loginView();
