@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="session start try">
-      <change afterPath="$PROJECT_DIR$/view/src/img/equipment-768534_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/img/filmmaker-2838932_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/img/music-4507817_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/img/old-1130731_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/img/screenplay-2651055_1280.jpg" afterDir="false" />
+    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="style ready and index page update">
+      <change afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/createSession.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/loginView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/resetMDPView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/resetMDPView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +48,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -97,7 +95,8 @@
       <workItem from="1610008819399" duration="11252000" />
       <workItem from="1610293903867" duration="3231000" />
       <workItem from="1610485679598" duration="6246000" />
-      <workItem from="1610543899489" duration="11831000" />
+      <workItem from="1610543899489" duration="12070000" />
+      <workItem from="1610615540251" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -197,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610551713794</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="style ready and index page update">
+      <created>1610559727459</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610559727459</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +236,8 @@
     <MESSAGE value="can logout" />
     <MESSAGE value="add searchView.php" />
     <MESSAGE value="session start try" />
-    <option name="LAST_COMMIT_MESSAGE" value="session start try" />
+    <MESSAGE value="style ready and index page update" />
+    <option name="LAST_COMMIT_MESSAGE" value="style ready and index page update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
