@@ -2,10 +2,19 @@
 /*
  * MVC Model :
  * All start with the index.php
- *                                                  ________>model.php
- *                                                 /            |
- *  index.php ---------> mainController.php ------|             v
- *                                                 \________> views/... -------> template.php
+ *
+ *                                              +---------------->model.php
+ *                                              |                     +
+ *                                              |                     |
+ * index.php +--------------> mainController.php|                     |
+ *                                              |                     |
+ *                                              |                     v
+ *                                              +---------------->/views/... +-------------->template.php
+ *                                                                    ^                          ^
+ *                                                                    |                          |
+ *                                                                    |                          |
+ *                                                                    +                          |
+ *                                                               createSessions.php +------------+
  *
  *  */
 require("\controllers\mainController.php");
