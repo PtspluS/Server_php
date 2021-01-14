@@ -4,7 +4,7 @@
 <?php ob_start();
 // Include config file
 require_once "/models/model.php";
-include_once "createSession.php";
+require_once  "createSession.php";
 
 
 // Check if the user is already logged in, if yes then redirect him to welcome page

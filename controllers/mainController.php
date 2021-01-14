@@ -19,3 +19,7 @@ function signupView(){
 function resetMDPView(){
     require("/view/resetMDPView.php");
 }
+
+function goToAdmin(){
+    require("/view/adminView.php");
+}

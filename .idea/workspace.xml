@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="style ready and index page update">
+    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="require once session">
       <change afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/createSession.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/adminView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/mainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/mainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/loginView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/resetMDPView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/resetMDPView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,7 @@
       <workItem from="1610293903867" duration="3231000" />
       <workItem from="1610485679598" duration="6246000" />
       <workItem from="1610543899489" duration="12070000" />
-      <workItem from="1610615540251" duration="740000" />
+      <workItem from="1610615540251" duration="4459000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610559727459</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="require once session">
+      <created>1610616306728</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610616306728</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +244,8 @@
     <MESSAGE value="add searchView.php" />
     <MESSAGE value="session start try" />
     <MESSAGE value="style ready and index page update" />
-    <option name="LAST_COMMIT_MESSAGE" value="style ready and index page update" />
+    <MESSAGE value="require once session" />
+    <option name="LAST_COMMIT_MESSAGE" value="require once session" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
