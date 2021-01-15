@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="sql injection ready">
+    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="add some style">
       <change afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
@@ -94,7 +94,8 @@
       <workItem from="1610293903867" duration="3231000" />
       <workItem from="1610485679598" duration="6246000" />
       <workItem from="1610543899489" duration="12070000" />
-      <workItem from="1610615540251" duration="15505000" />
+      <workItem from="1610615540251" duration="15551000" />
+      <workItem from="1610695706069" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610641360761</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add some style">
+      <created>1610642520316</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610642520316</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +267,8 @@
     <MESSAGE value="require once session" />
     <MESSAGE value="admin console + include -&gt; require" />
     <MESSAGE value="sql injection ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql injection ready" />
+    <MESSAGE value="add some style" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
