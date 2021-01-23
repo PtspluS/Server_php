@@ -1,0 +1,12 @@
+# Template PHP server 
+
+This a template of : 
+
+* PHP server
+* MVC model
+* Login
+* Mysql db 
+
+# DO NOT INCLUDE THIS TEMPLATE IN PRODUCTION
+
+This server contains vulnerabilities
