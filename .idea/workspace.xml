@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="add some style">
+    <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="sql injection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/searchView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/searchView.php" afterDir="false" />
     </list>
@@ -22,7 +22,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP5.6.40" />
@@ -96,7 +95,8 @@
       <workItem from="1610695706069" duration="7434000" />
       <workItem from="1611135122541" duration="4770000" />
       <workItem from="1611409015033" duration="75000" />
-      <workItem from="1611409140892" duration="11000" />
+      <workItem from="1611409140892" duration="103000" />
+      <workItem from="1612275092612" duration="1492000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610697695157</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="sql injection">
+      <created>1611409212422</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611409212422</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +283,8 @@
     <MESSAGE value="admin console + include -&gt; require" />
     <MESSAGE value="sql injection ready" />
     <MESSAGE value="add some style" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some style" />
+    <MESSAGE value="sql injection" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql injection" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

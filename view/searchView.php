@@ -29,21 +29,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $search = trim($_POST["search"]);
     }
 
+    $sqlError = "";
+
     $sql = "SELECT name,  IF(is_free = true, 'yes', 'no') as is_free FROM `stuff` WHERE name LIKE '%".$search."%'";
 
     // a%' UNION SELECT username, PASSWORD FROM users #
-
-    if($result = $mysqli->query($sql)){
-        while($row = mysqli_fetch_array($result)){
-            //Creates a loop to loop through results
-            $table .= "<tr>";
-            foreach ($row as $c){
-                $table .= "<td>". $c ."</td>";
+    try {
+        if ($result = $mysqli->query($sql)) {
+            while ($row = mysqli_fetch_array($result)) {
+                //Creates a loop to loop through results
+                //$table .= "<tr>";
+                //foreach ($row as $c){
+                //    $table .= "<td>". $c ."</td>";
+                //}
+                //$table .= "<tr>";
+                $table .= "<tr><td>" . $row[0] . "</td><td>" . $row[1] . "</td></tr>";
             }
-            //$table .= "<tr><td>" . $row[0] . "</td><td>" . $row[1] ."</td></tr>";
-            $table .= "<tr>";
+            $result->close();
         }
-        $result->close();
+        $sqlError = $mysqli->error;
+    } catch (Exception $e){
+        $sqlError = $e;
+        $sqlError .= $mysqli->error;
     }
 
 
@@ -81,6 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo $table;
             ?>
         </table>
+        <span class="help-block"><?php echo $sqlError; ?></span>
     </div>
 </div>
 
