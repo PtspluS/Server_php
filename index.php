@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 /*
  * MVC Model :
@@ -18,7 +20,7 @@ error_reporting(E_ALL);
  *                                                               createSessions.php +------------+
  *
  *  */
-require("\controllers\mainController.php");
+require("/controllers/mainController.php");
 
 if (isset($_GET['action'])) {
     if ($_GET['action'] == 'login') {
