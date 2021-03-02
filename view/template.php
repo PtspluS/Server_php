@@ -29,13 +29,13 @@
 <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="sidebar">
     <button class="w3-bar-item w3-button w3-large"
             onclick="w3_close()">Close &times;</button>
-    <a href="/Server_php/index.php" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
-    <a href="/Server_php/index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+    <a href="/index.php" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+    <a href="/index.php?action=search" class="w3-bar-item w3-button"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
     <?php
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-        $contentIco = '<button onclick="open_close_usermenu(\'submenu\')" class="w3-btn w3-block w3-left-align"><i class="fas fa-user-circle"></i>&nbsp; '.$_SESSION["username"]. '</button><div id="submenu" class="w3-container w3-hide"><a href="logout.php" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>&nbsp; Logout</a></div>';
+        $contentIco = '<button onclick="open_close_usermenu(\'submenu\')" class="w3-btn w3-block w3-left-align"><i class="fas fa-user-circle"></i>&nbsp; '.$_SESSION["username"]. '</button><div id="submenu" class="w3-container w3-hide"><a href="/logout.php" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>&nbsp; Logout</a></div>';
     } else {
-        $contentIco = '<a href="/Server_php/index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>';
+        $contentIco = '<a href="/index.php?action=login" class="w3-bar-item w3-button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>&nbsp; Login</a>';
     }
 
     echo $contentIco;
