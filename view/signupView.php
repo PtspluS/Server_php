@@ -3,7 +3,7 @@
 
 <?php  ob_start();
 
-require_once "/models/model.php";
+require_once "models/model.php";
 
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
@@ -128,4 +128,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require("/view/template.php"); ?>
+<?php require("view/template.php"); ?>

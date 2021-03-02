@@ -3,7 +3,7 @@
 
 <?php ob_start();
 // Include config file
-require_once "/models/model.php";
+require_once "models/model.php";
 require_once  "createSession.php";
 
 
@@ -117,4 +117,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require("/view/template.php"); ?>
+<?php require("view/template.php"); ?>

@@ -2,7 +2,7 @@
 
 <?php
 // Include config file
-require_once "/models/model.php";
+require_once "models/model.php";
 require_once "createSession.php";
 
 ob_start();
@@ -45,4 +45,4 @@ if(!$isAdmin) {
 </h1>
 
 <?php $content = ob_get_clean(); ?>
-<?php require("/view/template.php"); ?>
+<?php require("view/template.php"); ?>

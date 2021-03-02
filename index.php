@@ -20,7 +20,7 @@ error_reporting(E_ALL);
  *                                                               createSessions.php +------------+
  *
  *  */
-require("/controllers/mainController.php");
+require("controllers/mainController.php");
 
 if (isset($_GET['action'])) {
     if ($_GET['action'] == 'login') {
