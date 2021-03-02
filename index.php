@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 /*
  * MVC Model :
  * All start with the index.php
