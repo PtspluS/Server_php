@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="851a9286-a190-4767-b462-df830a1b3014" name="Default Changelist" comment="seul link peut vaincre Ganon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,11 @@
       <workItem from="1611409015033" duration="75000" />
       <workItem from="1611409140892" duration="103000" />
       <workItem from="1612275092612" duration="2263000" />
-      <workItem from="1614692841710" duration="1335000" />
+      <workItem from="1614692841710" duration="1649000" />
+      <workItem from="1614768102845" duration="610000" />
+      <workItem from="1614783803649" duration="626000" />
+      <workItem from="1614852824276" duration="785000" />
+      <workItem from="1614864828372" duration="2478000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1609334416146</created>
@@ -274,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614693914126</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="seul link peut vaincre Ganon">
+      <created>1614694363266</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1614694363266</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
