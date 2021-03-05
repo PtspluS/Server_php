@@ -11,7 +11,7 @@ require_once  "createSession.php";
 
 $search = "";
 $search_err = "";
-
+$sqlError = "";
 $table = "";
 
 // Check if the user is logged in, if not then redirect to login page
@@ -28,8 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $search = trim($_POST["search"]);
     }
-
-    $sqlError = "";
 
     $sql = "SELECT name,  IF(is_free = true, 'yes', 'no') as is_free FROM `stuff` WHERE name LIKE '%".$search."%'";
 
